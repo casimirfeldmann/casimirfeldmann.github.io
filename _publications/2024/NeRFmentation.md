@@ -23,6 +23,6 @@ authors:
   - Martin R. Oswald
 links:
   #Code: https://github.com/luost26/academic-homepage
-  Webpage: TODO
+  Webpage: NeRFmentation
   Paper: https://arxiv.org/abs/2401.03771
 ---
