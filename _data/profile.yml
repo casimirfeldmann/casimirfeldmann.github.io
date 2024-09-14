@@ -18,7 +18,7 @@ twitter: casimirfeldmann
 
 short_bio: >-
   <p>
-    I am a Master's student at ETH Zurich with focus on Computer Vision and Artificial Intelligence. 
+    I am a Master's student at ETH Zürich with focus on Computer Vision and Artificial Intelligence. 
   </p>
 
 portrait_url: /assets/images/photos/profile.jpg
@@ -26,11 +26,11 @@ portrait_url: /assets/images/photos/profile.jpg
 #  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
 education:
-- name: ETH Zurich
+- name: ETH Zürich
   logo: /assets/images/badges/alt_eth_logo.jpeg
   position: Master in Robotics, Systems and Control
   date: Sep. 2022 - present
-- name: ETH Zurich
+- name: ETH Zürich
   logo: /assets/images/badges/alt_eth_logo.jpeg
   position: Bachelor in Electrical Engineering and Information Technology
   date: Sep. 2019 - Sep. 2022
