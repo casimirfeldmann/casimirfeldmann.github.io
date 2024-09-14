@@ -26,7 +26,7 @@
 
 
   <title>NeRFmentation: Improving Monocular Depth Estimation with NeRF-based Data Augmentation</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="static/images/nerfmentation_logo.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -197,11 +197,12 @@
       <div class="hero-body">
         <video poster="" id="tree" autoplay controls muted loop height="100%">
           <!-- Your video here -->
-          <source src="static/videos/banner_video.mp4" type="video/mp4">
+          <source src="static/videos/reconstructed_kitti_teaser.mp4" type="video/mp4">
         </video>
         <h2 class="subtitle has-text-centered">
-          Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat
-          pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.
+          We propose a novel dataset augmentation pipeline that utilizes NeRF-generated data rendered from poses unseen
+          in the original dataset to improve the robustness of Monocular Depth Estimation networks. Here are some NeRF
+          RGB and depth renders of the KITTI dataset.
         </h2>
       </div>
     </div>
@@ -221,7 +222,8 @@
               linearity of the captured data trajectories. We propose a NeRF-based data augmentation pipeline to
               introduce synthetic data with more diverse viewing directions into training datasets and demonstrate the
               benefits of our approach to model performance and robustness. Our data augmentation pipeline, which we
-              call NeRFmentation, trains NeRFs on each scene in a dataset, filters out subpar NeRFs based on
+              call <strong>NeRFmentation</strong>, trains NeRFs on each scene in a dataset, filters out subpar NeRFs
+              based on
               relevant metrics, and uses them to generate synthetic RGB-D images captured from new viewing directions.
               In this work, we apply our technique in conjunction with three state-of-the-art MDE architectures on the
               popular autonomous driving dataset, KITTI, augmenting its training set of the Eigen split. We evaluate the
@@ -276,8 +278,7 @@
   <!-- End image carousel -->
 
 
-
-
+  
   <!-- Youtube video -->
   <section class="hero is-small is-light">
     <div class="hero-body">
@@ -289,8 +290,8 @@
 
             <div class="publication-video">
               <!-- Youtube embed code here -->
-              <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media"
-                allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/ICOT_zkTqmI?si=2veJ5he1iic7NvVF" frameborder="0"
+                allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -301,7 +302,7 @@
 
 
   <!-- Video carousel -->
-  <section class="hero is-small">
+  <!-- <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
         <h2 class="title is-3">Another Carousel</h2>
@@ -309,25 +310,25 @@
           <div class="item item-video1">
             <video poster="" id="video1" autoplay controls muted loop height="100%">
               <!-- Your video file here -->
-              <source src="static/videos/carousel1.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-video2">
-            <video poster="" id="video2" autoplay controls muted loop height="100%">
-              <!-- Your video file here -->
-              <source src="static/videos/carousel2.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-video3">
-            <video poster="" id="video3" autoplay controls muted loop height="100%">\
-              <!-- Your video file here -->
-              <source src="static/videos/carousel3.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <source src="static/videos/carousel1.mp4" type="video/mp4">
+  </video>
+  </div>
+  <div class="item item-video2">
+    <video poster="" id="video2" autoplay controls muted loop height="100%">
+      <!-- Your video file here -->
+      <source src="static/videos/carousel2.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="item item-video3">
+    <video poster="" id="video3" autoplay controls muted loop height="100%">\
+      <!-- Your video file here -->
+      <source src="static/videos/carousel3.mp4" type="video/mp4">
+    </video>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section> -->
   <!-- End video carousel -->
 
 
