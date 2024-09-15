@@ -34,6 +34,7 @@
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css" />
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -41,7 +42,18 @@
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
   <script src="static/js/index.js"></script>
+
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0px;
+      max-width: 1500px;
+      margin: 0 auto;
+    }
+  </style>
 </head>
 
 <body>
@@ -237,7 +249,67 @@
   </section>
   <!-- End paper abstract -->
 
-  
+  <!-- Image Comparison -->
+  <!-- <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <img-comparison-slider>
+          <img slot="first" src="static/images/carousel1.jpg" />
+          <img slot="second" src="static/images/carousel1.jpg" />
+        </img-comparison-slider>
+      </div>
+    </div>
+  </section> -->
+  <!--End paper poster -->
+
+  <div class="grid-container">
+    <!-- Image Comparison 1 -->
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <img-comparison-slider>
+            <img slot="first" src="static/images/before_after/B0.png" alt="Image 1A" />
+            <img slot="second" src="static/images/before_after/A0.png" alt="Image 1B" />
+          </img-comparison-slider>
+        </div>
+      </div>
+    </section>
+    <!-- Image Comparison 2 -->
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <img-comparison-slider>
+          <img slot="first" src="static/images/before_after/B0.png" alt="Image 1A" />
+          <img slot="second" src="static/images/before_after/A0.png" alt="Image 1B" />
+          </img-comparison-slider>
+        </div>
+      </div>
+    </section>
+    <!-- Image Comparison 3 -->
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <img-comparison-slider>
+          <img slot="first" src="static/images/before_after/B0.png" alt="Image 1A" />
+          <img slot="second" src="static/images/before_after/A0.png" alt="Image 1B" />
+          </img-comparison-slider>
+        </div>
+      </div>
+    </section>
+    <!-- Image Comparison 4 -->
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <img-comparison-slider>
+          <img slot="first" src="static/images/before_after/B0.png" alt="Image 1A" />
+          <img slot="second" src="static/images/before_after/A0.png" alt="Image 1B" />
+          </img-comparison-slider>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
   <!-- Youtube video -->
   <section class="hero is-small is-light">
     <div class="hero-body">
@@ -273,7 +345,6 @@
     </div>
   </section> -->
   <!--End paper poster -->
-
 
   <!--BibTex citation -->
   <section class="section" id="BibTeX">
