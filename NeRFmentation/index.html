@@ -36,6 +36,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css" />
   <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/image_comparison_grid.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
@@ -45,15 +46,6 @@
   <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
   <script src="static/js/index.js"></script>
 
-  <style>
-    .grid-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0px;
-      max-width: 1500px;
-      margin: 0 auto;
-    }
-  </style>
 </head>
 
 <body>
@@ -262,52 +254,77 @@
   </section> -->
   <!--End paper poster -->
 
-  <div class="grid-container">
-    <!-- Image Comparison 1 -->
-    <section class="hero">
-      <div class="hero-body">
-        <div class="container">
-          <img-comparison-slider>
-            <img slot="first" src="static/images/before_after/B0.png" alt="Image 1A" />
-            <img slot="second" src="static/images/before_after/A0.png" alt="Image 1B" />
-          </img-comparison-slider>
+  <!-- Image comparison grid -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3"></h2>
+        <div class="image-comparison-grid">
+          <!-- Image Comparison 1 -->
+          <div class="image-comparison-item">
+            <div class="image-comparison-container">
+              <img-comparison-slider hover="hover">
+                <figure slot="first" class="before">
+                  <img width="100%" src="static/images/before_after/B0.png">
+                  <figcaption>Before</figcaption>
+                </figure>
+                <figure slot="second" class="after">
+                  <img width="100%" src="static/images/before_after/B0.png">
+                  <figcaption>After</figcaption>
+                </figure>
+              </img-comparison-slider>
+            </div>
+          </div>
+          <!-- Image Comparison 2 -->
+          <div class="image-comparison-item">
+            <div class="image-comparison-container">
+              <img-comparison-slider hover="hover">
+                <figure slot="first" class="before">
+                  <img width="100%" src="static/images/before_after/B0.png">
+                  <figcaption>Before</figcaption>
+                </figure>
+                <figure slot="second" class="after">
+                  <img width="100%" src="static/images/before_after/B0.png">
+                  <figcaption>After</figcaption>
+                </figure>
+              </img-comparison-slider>
+            </div>
+          </div>
+          <!-- Image Comparison 3 -->
+          <div class="image-comparison-item">
+            <div class="image-comparison-container">
+              <img-comparison-slider hover="hover">
+                <figure slot="first" class="before">
+                  <img width="100%" src="static/images/before_after/B0.png">
+                  <figcaption>Before</figcaption>
+                </figure>
+                <figure slot="second" class="after">
+                  <img width="100%" src="static/images/before_after/B0.png">
+                  <figcaption>After</figcaption>
+                </figure>
+              </img-comparison-slider>
+            </div>
+          </div>
+          <!-- Image Comparison 4 -->
+          <div class="image-comparison-item">
+            <div class="image-comparison-container">
+              <img-comparison-slider hover="hover">
+                <figure slot="first" class="before">
+                  <img width="100%" src="static/images/before_after/B0.png">
+                  <figcaption>Before</figcaption>
+                </figure>
+                <figure slot="second" class="after">
+                  <img width="100%" src="static/images/before_after/B0.png">
+                  <figcaption>After</figcaption>
+                </figure>
+              </img-comparison-slider>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-    <!-- Image Comparison 2 -->
-    <section class="hero">
-      <div class="hero-body">
-        <div class="container">
-          <img-comparison-slider>
-          <img slot="first" src="static/images/before_after/B0.png" alt="Image 1A" />
-          <img slot="second" src="static/images/before_after/A0.png" alt="Image 1B" />
-          </img-comparison-slider>
-        </div>
-      </div>
-    </section>
-    <!-- Image Comparison 3 -->
-    <section class="hero">
-      <div class="hero-body">
-        <div class="container">
-          <img-comparison-slider>
-          <img slot="first" src="static/images/before_after/B0.png" alt="Image 1A" />
-          <img slot="second" src="static/images/before_after/A0.png" alt="Image 1B" />
-          </img-comparison-slider>
-        </div>
-      </div>
-    </section>
-    <!-- Image Comparison 4 -->
-    <section class="hero">
-      <div class="hero-body">
-        <div class="container">
-          <img-comparison-slider>
-          <img slot="first" src="static/images/before_after/B0.png" alt="Image 1A" />
-          <img slot="second" src="static/images/before_after/A0.png" alt="Image 1B" />
-          </img-comparison-slider>
-        </div>
-      </div>
-    </section>
-  </div>
+    </div>
+  </section>
+  <!-- End image comparison grid -->
 
 
   <!-- Youtube video -->
