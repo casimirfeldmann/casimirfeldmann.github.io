@@ -86,13 +86,23 @@
                 <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en" target="_blank">Martin R.
                   Oswald</a><sup>1,4</sup>,</span>
               </span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
             </div>
 
             <div class="is-size-5 publication-authors">
               <span class="author-block">ETH Zürich</a><sup>1</sup>, Microsoft</a><sup>2</sup>, University of
                 Alicante</a><sup>3</sup>, University of Amsterdam</a><sup>4</sup> <br>SyntheticData4CV 2024 (ECCV
                 Workshop) </span>
-              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <sup>1</sup> <a href="https://ethz.ch"><img style="width:15%; padding-right: 15px;"
+                  src="static/images/eth_logo.png"> </a>
+              <sup>2</sup> <a href="https://www.microsoft.com"><img style="width:20%; padding-right: 15px;"
+                  src="static/images/microsoft_logo.jpg"> </a>
+              <sup>3</sup> <a href="https://www.ua.es"><img style="width:12%; padding-right: 15px;"
+                  src="static/images/UniversityAlicanteLogo.png"> </a>
+              <sup>4</sup> <a href="https://www.uva.nl"><img style="width:12%; padding-right: 15px;"
+                  src="static/images/university-of-amsterdam.png"> </a>
             </div>
 
             <div class="column has-text-centered">
@@ -205,7 +215,8 @@
         </video>
         <h2 class="subtitle has-text-centered">
           We propose a novel dataset augmentation pipeline that utilizes NeRF-generated data rendered from poses unseen
-          in the original dataset to improve the robustness of Monocular Depth Estimation networks. Here are some NeRF
+          in the original dataset to improve the robustness of Monocular Depth Estimation networks. Here are novel
+          interpolated NeRF
           RGB and depth renders of the KITTI dataset.
         </h2>
       </div>
@@ -258,7 +269,7 @@
   <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
-        <h2 class="title is-3"></h2>
+        <h2 class="title is-3">Visual Comparisons</h2>
         <div class="image-comparison-grid">
           <!-- Image Comparison 1 -->
           <div class="image-comparison-item">
@@ -266,11 +277,11 @@
               <img-comparison-slider hover="hover">
                 <figure slot="first" class="before">
                   <img width="100%" src="static/images/before_after/B0.png">
-                  <figcaption>Before</figcaption>
+                  <figcaption>Baseline</figcaption>
                 </figure>
                 <figure slot="second" class="after">
-                  <img width="100%" src="static/images/before_after/B0.png">
-                  <figcaption>After</figcaption>
+                  <img width="100%" src="static/images/before_after/A0.png">
+                  <figcaption>NeRFmented</figcaption>
                 </figure>
               </img-comparison-slider>
             </div>
@@ -280,12 +291,12 @@
             <div class="image-comparison-container">
               <img-comparison-slider hover="hover">
                 <figure slot="first" class="before">
-                  <img width="100%" src="static/images/before_after/B0.png">
-                  <figcaption>Before</figcaption>
+                  <img width="100%" src="static/images/before_after/B1.png">
+                  <figcaption>Baseline</figcaption>
                 </figure>
                 <figure slot="second" class="after">
-                  <img width="100%" src="static/images/before_after/B0.png">
-                  <figcaption>After</figcaption>
+                  <img width="100%" src="static/images/before_after/A1.png">
+                  <figcaption>NeRFmented</figcaption>
                 </figure>
               </img-comparison-slider>
             </div>
@@ -295,12 +306,12 @@
             <div class="image-comparison-container">
               <img-comparison-slider hover="hover">
                 <figure slot="first" class="before">
-                  <img width="100%" src="static/images/before_after/B0.png">
-                  <figcaption>Before</figcaption>
+                  <img width="100%" src="static/images/before_after/B2.png">
+                  <figcaption>Baseline</figcaption>
                 </figure>
                 <figure slot="second" class="after">
-                  <img width="100%" src="static/images/before_after/B0.png">
-                  <figcaption>After</figcaption>
+                  <img width="100%" src="static/images/before_after/A2.png">
+                  <figcaption>NeRFmented</figcaption>
                 </figure>
               </img-comparison-slider>
             </div>
@@ -310,16 +321,21 @@
             <div class="image-comparison-container">
               <img-comparison-slider hover="hover">
                 <figure slot="first" class="before">
-                  <img width="100%" src="static/images/before_after/B0.png">
-                  <figcaption>Before</figcaption>
+                  <img width="100%" src="static/images/before_after/B3.png">
+                  <figcaption>Baseline</figcaption>
                 </figure>
                 <figure slot="second" class="after">
-                  <img width="100%" src="static/images/before_after/B0.png">
-                  <figcaption>After</figcaption>
+                  <img width="100%" src="static/images/before_after/A3.png">
+                  <figcaption>NeRFmented</figcaption>
                 </figure>
               </img-comparison-slider>
             </div>
           </div>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            *Baseline is BinsFormer [Li 2022]. NeRFmented is BinsFormer with the interpolation NeRFmentation strategy.
+          </p>
         </div>
       </div>
     </div>
@@ -364,10 +380,32 @@
   <!--End paper poster -->
 
   <!--BibTex citation -->
+  <section class="section" id="References">
+    <div class="container is-max-desktop content">
+      <h2 class="title">References</h2>
+      <div class="content has-text-justified">
+        <p>
+          [Li 2022] Li, Z., Wang, X., Liu, X., Jiang, J.: Binsformer: Revisiting adaptive bins for monoc-
+          ular depth estimation (2022)
+        </p>
+      </div>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+  <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@misc{feldmann2024nerfmentationnerfbasedaugmentationmonocular,
+        title={NeRFmentation: NeRF-based Augmentation for Monocular Depth Estimation}, 
+        author={Casimir Feldmann and Niall Siegenheim and Nikolas Hars and Lovro Rabuzin and Mert Ertugrul and Luca Wolfart and Marc Pollefeys and Zuria Bauer and Martin R. Oswald},
+        year={2024},
+        eprint={2401.03771},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV},
+        url={https://arxiv.org/abs/2401.03771}, 
+  }</code></pre>
     </div>
   </section>
   <!--End BibTex citation -->
