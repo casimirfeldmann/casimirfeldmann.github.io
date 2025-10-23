@@ -5,7 +5,7 @@ navbar_name: "Casimir Feldmann"
 # positions:
 # - name: Robotics, Systems and Control Master's Student at ETH Zurich
 
-email: "cfeldmann@ethz.com"
+email: "casimir.feldmann@gmail.com"
 # cv_link: link-to-your-cv-file
 gscholar: WNqWurwAAAAJ
 github: casimirfeldmann
@@ -18,7 +18,7 @@ twitter: casimirfeldmann
 
 short_bio: >-
   <p>
-    I am a Master's student at ETH Zürich with focus on Computer Vision and Artificial Intelligence. 
+    Computer vision and AI researcher with a Master's from ETH Zürich. I specialize in deep learning for robotic perception, with experience in real-time neural network deployment on embedded GPU platforms. My work spans object detection, SLAM, and 3D reconstruction, combining strong C++ programming with modern ML frameworks.
   </p>
 
 portrait_url: /assets/images/photos/profile.jpg
@@ -29,7 +29,7 @@ education:
 - name: ETH Zürich
   logo: /assets/images/badges/alt_eth_logo.jpeg
   position: Master in Robotics, Systems and Control
-  date: Sep. 2022 - present
+  date: Sep. 2022 - Sep. 2025
 - name: ETH Zürich
   logo: /assets/images/badges/alt_eth_logo.jpeg
   position: Bachelor in Electrical Engineering and Information Technology
@@ -38,7 +38,7 @@ education:
 experience:
 - name: Rheinmetall Air Defense AG
   logo: /assets/images/badges/rheinmetall.jpg
-  position: Deep Learning Intern
+  position: Deep Learning Engineer Intern
   date: Feb. 2024 - Aug. 2024
 
 
