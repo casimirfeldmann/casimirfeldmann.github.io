@@ -3,7 +3,7 @@ title:          "DiskChunGS: Large-Scale 3D Gaussian SLAM Through Chunk-Based Me
 date:           2025-11-28 00:01:00 +0800
 selected:       true
 # pub:            "SyntheticData4CV 2024 (Workshop at ECCV)"
-pub_pre:        "Submitted to IEEE Robotics and Automation Letters (RA-L)"
+# pub_pre:        "Submitted to IEEE Robotics and Automation Letters (RA-L)"
 # pub_post:       'Under review.'
 #pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
 # pub_date:       "2025"
